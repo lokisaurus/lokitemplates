@@ -1,0 +1,40 @@
+<style>
+
+.badge {
+  position: relative;
+  width: 400px;
+  border-radius: 50%;
+  transform: rotate(-50deg);
+}
+
+h1 span {
+  font: 26px Monaco, MonoSpace;
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  left: 0;
+  top: 0;
+  transform-origin: bottom center;
+}
+
+var lettering = function(node,text){
+    var str = typeof text=='undefined'
+        ?node.textContent
+        :text;
+    node.innerHTML='';
+    var openTag = '<span>';
+    var closeTag = '</span>';
+    var newHTML = openTag;
+    var closeTags = closeTag;
+    for(var i=0,iCount=str.length;i<iCount;i++){
+        newHTML+=str[i]+openTag;
+        closeTags+=closeTag;
+    }
+    node.innerHTML = newHTML+closeTags;
+}
+lettering(
+    document.getElementById('text'),
+    Math.round(Math.random()*1000) + ' : Hello world!!!'
+);
+
+</style>
