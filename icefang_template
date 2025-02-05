@@ -1,0 +1,35 @@
+<style>
+
+.icefang_queen_background {
+  width: 560px;
+  height: auto;
+  background-image: url('https://i.postimg.cc/3xVC3zP2/122024-for-xarkla1-by-elenpanter-dix1177.png');
+  #background-size: cover;
+  background-color: #444444;
+}
+
+.icefang_queen_middle {
+  width: 520px;
+  height: auto;
+  margin: 20px 20px 20px 20px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.icefang_queen_text {
+  text-align: justify;
+  font-size: 15px;
+  color: #a3a3a3;
+  padding: 35px;
+}
+
+.icefang_queen_img {
+  float: right;  
+  margin: 20px 0px -100px 400px;
+  width: 200px;
+  height: auto;
+  shape-outside: url("https://i.imgur.com/KdSHSam.png");
+  shape-image-threshold: 0.9;
+  shape-margin: 1%;
+}
+
+</style>
